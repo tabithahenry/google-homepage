@@ -1,0 +1,271 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+     	font-family: arial,sans-serif;
+  	background-color: var(--color-white);
+	font-size: 13px;
+}
+
+.page__container {
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Nav */
+.nav{
+	text-align: right;
+  	width: 100%;
+ 	padding: 15px;
+ 	padding-right: 30px;
+	margin: 0px;
+}
+
+.nav_list{
+	display: flex;
+	justify-content: flex-end;
+  	align-items: center;
+	justify-content: flex-end;
+}
+
+.gmaillink{
+	padding: 15px;
+}
+
+.nav a:link,
+a:visited {
+    	text-decoration: none;
+    	font-size: 13px;
+	color: rgba(0,0,0,0.87);
+}
+
+.nav a:hover {
+	opacity: .85;
+   	text-decoration: underline;
+}
+
+.products {
+	height: 30px;
+	width: 30px;
+	position: relative;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.products svg {
+	width: 16px;
+	height: 16px;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	fill: #5f6368;
+}
+
+.userimg{
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+	position: relative;
+
+}
+
+.main {
+	text-align: center;
+	margin-top: 35px;
+	flex: 1;
+}
+
+.logo{
+	display: block;
+	padding-top: 97px;
+	height: 72px;
+	width: auto;
+	text-align: center;
+}
+
+.main_input {
+ 	margin-top: 17px;
+  	position: relative;
+	padding-top: 100px;
+}
+
+.search_main {
+  max-width: 584px;
+  margin: 0 auto;
+}
+
+.searchbar{
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 44px;
+	width: 100%;
+	border-radius: 24px;
+	border: 1px solid #dfe1e5;
+	padding: 5px 8px 0 16px;
+}
+
+.searchbar:hover {
+  	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  	border-color: rgba(223, 225, 229, 0);
+}
+.search_box{
+	display: flex;
+	height: 44px;	
+}
+
+.search_icon svg {
+  	height: 20px;
+  	width: 20px;
+	fill: #9aa0a6;
+}
+
+.search_icon {
+ 	height: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin-top: -3px;
+  	margin-right: 5px;
+	margin-left: -2px;
+}
+
+.search_box {
+  height: 100%;
+  flex: 1;
+}
+
+.search_box input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  margin-top: -3px;
+	margin-left: 7px;
+  color: #101010;
+}
+
+.search_box input:focus {
+  outline: none;
+}
+
+.voice_control_icon {
+  height: 100%;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3px;
+  margin-right: 5px;
+}
+.voice_control_icon svg {
+  height: 24px;
+  width: 24px;
+}
+
+.buttons {
+	padding-top: 18px;
+	margin-bottom: 15px;
+}
+
+.buttons input[type="submit"] {
+	background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttons input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* LANGUAGES */
+
+.languages {
+	display: block;
+	line-height: 28px;
+	margin-bottom: 85px;
+	
+}
+
+.languages a {
+	padding: 0 3px;
+	color: #1a0dab;
+	font-size: 13px;
+}
+
+.languages a:visited {
+	color: #609;
+}
+
+/* FOOTER */
+
+.footer {
+	display: block;
+	line-height: 40px;
+	background: #f2f2f2;
+	border-top: 1px solid #dadce0;
+	position: absolute;
+	width: 100%;
+	font-size: 15px;
+}
+
+
+.footer a {
+	display: inline-block;
+	color: #70757a;
+}
+
+.footer_country {
+	border-bottom: 1px solid #dadce0;
+	margin-left: 3px;
+	color: rgba(0,0,0,.54);
+    	padding-left: 27px;
+}
+
+.footer_right {
+	float: right;
+    	margin-right: 30px;
+}
+
+.footer_left {
+	float: left;
+	margin-left: 7px;
+}
+
+.footer_links {
+	padding-left: 23px;
+}
